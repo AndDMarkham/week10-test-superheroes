@@ -12,7 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('selection');
 });
+
+Route::get('/index', 'HomeController@index')->name('home');
+
+Route::post('/superhero/{slug}', 'SuperheroController@emergency')->name('emergency');
+
+Route::get('/superheroes', 'SuperheroController@index');
+
+Route::get('/superhero/{slug}', 'SuperheroController@show');
 
 Auth::routes();

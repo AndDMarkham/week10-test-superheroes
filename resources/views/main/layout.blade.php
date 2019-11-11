@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
     <title>Avengers</title>
 
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Bangers&amp;subset=latin-ext" rel="stylesheet">
@@ -12,7 +13,7 @@
 <body>
 
     <nav class="menu">
-        <a href="#">Home</a>
+        <a href="{{ route('home') }}">Home</a>
         @guest
             <a href="{{ route('login') }}">Login</a>
             <a href="{{ route('register') }}">Register</a>
